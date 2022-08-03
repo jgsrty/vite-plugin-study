@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "rty-ui-plus": "^0.1.4",
     "vite-plugin-inspect": "^0.6.0",
     "vue": "^3.2.37"
   },

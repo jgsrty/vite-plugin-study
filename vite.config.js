@@ -6,4 +6,14 @@ import inspect from "vite-plugin-inspect";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), virtual(), inspect()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vue: ["vue"],
+          library: ["rty-ui-plus"],
+        },
+      },
+    },
+  },
 });
